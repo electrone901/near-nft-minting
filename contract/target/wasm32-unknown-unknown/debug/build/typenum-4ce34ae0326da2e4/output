@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=/Users/mac/Desktop/nearvember5-main/contract/target/wasm32-unknown-unknown/debug/build/typenum-4ce34ae0326da2e4/out/consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=/Users/mac/Desktop/nearvember5-main/contract/target/wasm32-unknown-unknown/debug/build/typenum-4ce34ae0326da2e4/out/op.rs
