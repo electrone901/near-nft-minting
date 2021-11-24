@@ -46772,67 +46772,67 @@ __exportStar(require("./browser-connect"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","./browser-connect":"../node_modules/near-api-js/lib/browser-connect.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-const CONTRACT_NAME = "imlang7.testnet";
-console.log("contractName", CONTRACT_NAME);
+const CONTRACT_NAME = 'nft.0t.testnet';
+console.log('contractName', CONTRACT_NAME);
 
 function getConfig(env) {
   switch (env) {
-    case "production":
-    case "mainnet":
+    case 'production':
+    case 'mainnet':
       return {
-        networkId: "mainnet",
-        nodeUrl: "https://rpc.mainnet.near.org",
+        networkId: 'mainnet',
+        nodeUrl: 'https://rpc.mainnet.near.org',
         contractName: CONTRACT_NAME,
-        walletUrl: "https://wallet.near.org",
-        helperUrl: "https://helper.mainnet.near.org",
-        explorerUrl: "https://explorer.mainnet.near.org"
+        walletUrl: 'https://wallet.near.org',
+        helperUrl: 'https://helper.mainnet.near.org',
+        explorerUrl: 'https://explorer.mainnet.near.org'
       };
 
-    case "development":
-    case "testnet":
+    case 'development':
+    case 'testnet':
       return {
-        networkId: "testnet",
-        nodeUrl: "https://rpc.testnet.near.org",
+        networkId: 'testnet',
+        nodeUrl: 'https://rpc.testnet.near.org',
         contractName: CONTRACT_NAME,
-        walletUrl: "https://wallet.testnet.near.org",
-        helperUrl: "https://helper.testnet.near.org",
-        explorerUrl: "https://explorer.testnet.near.org"
+        walletUrl: 'https://wallet.testnet.near.org',
+        helperUrl: 'https://helper.testnet.near.org',
+        explorerUrl: 'https://explorer.testnet.near.org'
       };
 
-    case "betanet":
+    case 'betanet':
       return {
-        networkId: "betanet",
-        nodeUrl: "https://rpc.betanet.near.org",
+        networkId: 'betanet',
+        nodeUrl: 'https://rpc.betanet.near.org',
         contractName: CONTRACT_NAME,
-        walletUrl: "https://wallet.betanet.near.org",
-        helperUrl: "https://helper.betanet.near.org",
-        explorerUrl: "https://explorer.betanet.near.org"
+        walletUrl: 'https://wallet.betanet.near.org',
+        helperUrl: 'https://helper.betanet.near.org',
+        explorerUrl: 'https://explorer.betanet.near.org'
       };
 
-    case "local":
+    case 'local':
       return {
-        networkId: "local",
-        nodeUrl: "http://localhost:3030",
+        networkId: 'local',
+        nodeUrl: 'http://localhost:3030',
         keyPath: `${"/Users/mac"}/.near/validator_key.json`,
-        walletUrl: "http://localhost:4000/wallet",
+        walletUrl: 'http://localhost:4000/wallet',
         contractName: CONTRACT_NAME
       };
 
-    case "test":
-    case "ci":
+    case 'test':
+    case 'ci':
       return {
-        networkId: "shared-test",
-        nodeUrl: "https://rpc.ci-testnet.near.org",
+        networkId: 'shared-test',
+        nodeUrl: 'https://rpc.ci-testnet.near.org',
         contractName: CONTRACT_NAME,
-        masterAccount: "test.near"
+        masterAccount: 'test.near'
       };
 
-    case "ci-betanet":
+    case 'ci-betanet':
       return {
-        networkId: "shared-test-staging",
-        nodeUrl: "https://rpc.ci-betanet.near.org",
+        networkId: 'shared-test-staging',
+        nodeUrl: 'https://rpc.ci-betanet.near.org',
         contractName: CONTRACT_NAME,
-        masterAccount: "test.near"
+        masterAccount: 'test.near'
       };
 
     default:
@@ -48973,8 +48973,8 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 // import { NFTStorage, File } from "nft.storage";
 const {
   networkId
-} = (0, _config.default)("development" || "development");
-const nftStorageToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEIyMTFiRjY2NTNjZTcyODEyZGI3MjRGMDkwODUzODM1QjBGOTE0MUUiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYzNzY0NDQzODQ0NSwibmFtZSI6InF1aWxsIn0.zCASQI4jOjLG98tCmI1TkJkJbHGyOS-BNClgQ8jwN2M";
+} = (0, _config.default)("development" || 'development');
+const nftStorageToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEIyMTFiRjY2NTNjZTcyODEyZGI3MjRGMDkwODUzODM1QjBGOTE0MUUiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTYzNzY0NDQzODQ0NSwibmFtZSI6InF1aWxsIn0.zCASQI4jOjLG98tCmI1TkJkJbHGyOS-BNClgQ8jwN2M';
 
 const getImageBlob = async imageInput => {
   return new Promise((res, rej) => {
@@ -48993,8 +48993,8 @@ const getImageBlob = async imageInput => {
 const Login = () => {
   return /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h1", null, "NEARVEMBER CHALLENGE 05!"), /*#__PURE__*/_react.default.createElement("p", {
     style: {
-      textAlign: "center",
-      marginTop: "2.5em"
+      textAlign: 'center',
+      marginTop: '2.5em'
     }
   }, /*#__PURE__*/_react.default.createElement("button", {
     onClick: _utils.login
@@ -49002,6 +49002,7 @@ const Login = () => {
 };
 
 const App = () => {
+  console.log('window.contract', window.contract);
   const [error, setError] = (0, _react.useState)(null);
   const [notification, setNotification] = (0, _react.useState)(false);
 
@@ -49011,8 +49012,7 @@ const App = () => {
       titleInput,
       imageInput
     } = e.target.elements; // const title = titleInput.value.trim();
-
-    const title = "Bitcoin NFT"; // const image = await getImageBlob(imageInput);
+    // const image = await getImageBlob(imageInput);
     // if (!title || !image) {
     //   setError("Title and Image should be provided!");
     //   return;
@@ -49028,7 +49028,8 @@ const App = () => {
     // }
     // const media = `https://${rep.data.value.cid}.ipfs.dweb.link/`;
 
-    const media = `https://bafkreib3zx5o2wl4tus4z52jme7lvy2eme7fr56yyxefcfs7er3johpnqe.ipfs.dweb.link/`;
+    const title = 'NEAR NFT Minting';
+    const media = `https://images.unsplash.com/photo-1633287453177-24823499b02c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80`;
     window.contract.nft_mint({
       receiver_id: window.accountId,
       token_id: (0, _nanoid.nanoid)(),
@@ -49037,7 +49038,7 @@ const App = () => {
         media,
         copies: 1
       }
-    }, "100000000000000", "10000000000000000000000").then(res => {
+    }, '100000000000000', '10000000000000000000000').then(res => {
       console.log(res);
       setNotification(true);
     });
@@ -49046,48 +49047,48 @@ const App = () => {
   if (!window.walletConnection.isSignedIn()) return /*#__PURE__*/_react.default.createElement(Login, null);
   return /*#__PURE__*/_react.default.createElement("div", null, notification && /*#__PURE__*/_react.default.createElement(Notification, null), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "end"
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'end'
     }
   }, "Hi,\xA0", /*#__PURE__*/_react.default.createElement("span", {
     style: {
-      fontWeight: "bold"
+      fontWeight: 'bold'
     }
   }, window.accountId), "!", /*#__PURE__*/_react.default.createElement("button", {
     className: "link",
     onClick: _utils.logout
   }, "Sign out")), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      display: "flex",
-      justifyContent: "center"
+      display: 'flex',
+      justifyContent: 'center'
     }
   }, /*#__PURE__*/_react.default.createElement("form", {
     onSubmit: onSubmit
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "Mint This BitCoin NFT!"), error && /*#__PURE__*/_react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "NEAR NFT Minting"), error && /*#__PURE__*/_react.default.createElement("p", {
     style: {
-      backgroundColor: "rgba(255, 0, 0, 0.3)",
-      textAlign: "center",
-      padding: "10px",
-      borderRadius: "10px"
+      backgroundColor: 'rgba(255, 0, 0, 0.3)',
+      textAlign: 'center',
+      padding: '10px',
+      borderRadius: '10px'
     }
   }, error), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      display: "flex",
-      justifyContent: "center",
-      marginTop: "20px"
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '20px'
     }
   }, /*#__PURE__*/_react.default.createElement("img", {
     style: {
       height: 150,
       width: 150
     },
-    src: "https://cdn.pixabay.com/photo/2018/02/02/13/51/bitcoin-3125488__480.png"
+    src: 'https://images.unsplash.com/photo-1633287453177-24823499b02c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80'
   })), /*#__PURE__*/_react.default.createElement("table", null, /*#__PURE__*/_react.default.createElement("tbody", null, /*#__PURE__*/_react.default.createElement("tr", null), /*#__PURE__*/_react.default.createElement("tr", null))), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      display: "flex",
-      justifyContent: "center",
-      marginTop: "20px"
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '20px'
     }
   }, /*#__PURE__*/_react.default.createElement("button", {
     type: "submit"
@@ -49153,7 +49154,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63157" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56652" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
